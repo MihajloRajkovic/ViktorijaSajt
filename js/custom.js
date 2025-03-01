@@ -1,4 +1,4 @@
-// Get Current Year
+
 function getCurrentYear() {
     var d = new Date();
     var year = d.getFullYear();
@@ -6,7 +6,6 @@ function getCurrentYear() {
 }
 getCurrentYear()
 
-//client section owl carousel
 $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -30,8 +29,6 @@ $(".owl-carousel").owlCarousel({
         }
     }
 });
-
-/** google_map js **/
 
 function myMap() {
     var mapProp = {
@@ -61,7 +58,7 @@ function startSlideshow() {
     showSlides(slideIndex);
     setInterval(function () {
         plusSlides(1);
-    }, 5000); // 5 seconds per slide
+    }, 5000); 
 }
 
 document.addEventListener("DOMContentLoaded", startSlideshow);
@@ -71,15 +68,13 @@ function validatePhoneNumber(input) {
     input.value = input.value.replace(/\D/g, '');
   
     if (input.value.length > 16) {
-      input.value = input.value.slice(0, 16);  // Truncate the value to 16 digits
+      input.value = input.value.slice(0, 16);  
     }
   }
 
   function validateTextLength(input, maxLength) {
-    // Ensure the length of the input does not exceed maxLength
     if (input.value.length > maxLength) {
-      input.value = input.value.slice(0, maxLength);  // Truncate the value to the max length
+      input.value = input.value.slice(0, maxLength); 
     }
   }
-  
   
